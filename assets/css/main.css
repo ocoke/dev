@@ -1,0 +1,24 @@
+/* 响应式判断页面尺寸 */
+main{
+    margin: 30px;
+}
+@media (min-width: 576px){
+    main{
+        margin: 45px;
+    }
+}
+@media (min-width: 768px){
+    main{
+        margin: 55px;
+    }
+}
+@media (min-width: 992px){
+    main{
+        margin: 4%;
+    }
+}
+@media (min-width: 1300px){
+    main{
+        margin: 6%;
+    }
+}
