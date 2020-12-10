@@ -74,7 +74,7 @@ h4 {
 }
 
 .my-card {
-    /* box-shadow: 0px 5px 15px 5px rgb(203, 221, 232); */
+    box-shadow: 0px 5px 15px 5px rgb(203, 221, 232);
 }
 
 strike {
