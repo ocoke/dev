@@ -140,15 +140,14 @@ strike {
 .social .fa {
     font-size: 24px;
 }
-
+/*
 .photo-bg {
-    /* background-image: url(assets/background.jpg); */
+    
     background-image: url(https://cdn.jsdelivr.net/gh/oCoke/Assets@79ee85d/project/0EAC977F-9455-4E45-BB0B-6FC485D02ADA.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
 }
-
+*/
 footer p {
     font-size: 12px;
 }
