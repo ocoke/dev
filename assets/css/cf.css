@@ -70,7 +70,6 @@ h4 {
 .container {
     position: relative;
     top: 50%;
-    transform: translateY(-50%);
 }
 
 .my-card {
