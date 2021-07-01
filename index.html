@@ -22,6 +22,17 @@
             <div id="md">
                 <h3 align="center">[ Loading ]</h3>
             </div>
+<div class="google-ad">
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5902069866611465"
+     data-ad-slot="8082351338"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+</div>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
             <hr>
             <div id="cdnInfo" style="text-align: center;">
                 当前 CDN 节点：<code id="cdn">[未知]</code><br>
@@ -35,10 +46,31 @@
             <div id="copyright" style="text-align: center;">
                 <a href="https://page.yfun.top/Privacy-Policy/">隐私政策</a> · <a href="https://blog.yfun.top/">YFun's Blog</a>
             </div>
+		<div class="google-ad">
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5902069866611465"
+     data-ad-slot="8082351338"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+</div>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
         </div>
 <script src="https://cdn.jsdelivr.net/npm/jquery"></script>
 <script src="https://cdn.jsdelivr.net/npm/marked@2.0.1/lib/marked.min.js"></script>
 <script>
+function loadScriptFile(option) {
+    let script = document.createElement('script');
+    script.src = option.url;
+    if (option.cb) script.onload = option.cb;
+    if (option.module) script.type = 'module';
+    script[option.loadType] = true;
+    document.body.appendChild(script);
+}
+	
+		
     getCDNinfo = function() {
 	$.ajax({
 		url: "https://cf.record.yfun.top/cdn-cgi/trace",
@@ -66,6 +98,7 @@
             $("#md").html(mdFile2);
         });
         getCDNinfo();
+	    loadScriptFile({url: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", loadType: "async"});
     });
 </script>
 </body>
