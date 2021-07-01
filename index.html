@@ -124,7 +124,7 @@ function loadScriptFile(option) {
     document.getElementById('dns-loading').remove();
     for (let i = 0; i < answer.length; i++) {
       let ele = document.createElement('p');
-      ele.innerText = answer[i]['data'];
+      ele.innerHTML = "<code>" + answer[i]['data'] + "</code>";
       document.getElementById('dns-result').append(ele);
     }
   });
