@@ -27,6 +27,13 @@
             <div id="md">
                 <h3 align="center">[ Loading ]</h3>
             </div>
+		<div id="result">
+			<h3>智能 DNS 解析结果</h3>
+			<h5>Powered by MHuiG API</h5>
+			<div id="dns-result">
+				<span id="dns-loading">[ Loading ]</span>
+			</div>
+		</div>
 <div class="google-ad">
 <ins class="adsbygoogle"
      style="display:block"
@@ -104,6 +111,17 @@ function loadScriptFile(option) {
         });
         getCDNinfo();
 	    loadScriptFile({url: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", loadType: "async"});
+        fetch("https://api.mhuig.top/dns/dnspod/get?name=cfp.yfun.top")
+  .then(res=>res.json())
+  .then(json=>{
+    var answer = json['Answer'];
+    document.getElementById('dns-loading').remove();
+    for (let i = 0; i < answer.length; i++) {
+      let ele = document.createElement('p');
+      ele.innerText = answer[i]['data'];
+      document.getElementById('dns-result').append(ele);
+    }
+  });
     });
 </script>
 </body>
