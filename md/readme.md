@@ -10,4 +10,4 @@
 
 如果需要 IP 列表，可以参考 <code>cfp.yfun.top</code>，非常不建议直接 CNAME，我将有可能随时停止服务或更换地址。
 
-OK，谢谢大家。
+> 这里在未来也许将展示 <code>cfp.yfun.top</code> 的 IP。
